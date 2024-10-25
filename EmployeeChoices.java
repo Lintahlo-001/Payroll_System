@@ -5,7 +5,7 @@ public class EmployeeChoices {
     public static Scanner scanner = new Scanner(System.in);
     private final static String filename = "employees.csv";
 
-    public static void login(Employee employee) { // Log in method
+    public static void login() { // Log in method
         Employee loggedInEmployee;  
     
         while (true) {
@@ -34,8 +34,8 @@ public class EmployeeChoices {
         }
     }
 
-    public static void register(Employee employee) {
-            employee = new Employee();
+    public static void register() {
+            Employee employee;
             String hourlyRate;
 
             System.out.println("\n==================================================================================================================");

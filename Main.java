@@ -3,8 +3,7 @@ import java.util.*;
 public class Main {
     public static Scanner scanner = new Scanner(System.in);
     public static ArrayList<Employee> employees = new ArrayList<Employee>();
-    public static Employee user;
-
+    
     public static void main(String[] args) {
         employees = CSVHandler.readEmployeesFromCSV("employees.csv");
         main();
@@ -21,10 +20,10 @@ public class Main {
 
                 switch (choice) {
                     case 1:
-                        EmployeeChoices.login(user); // Pass the employee object to the login method
+                        EmployeeChoices.login(); // Pass the employee object to the login method
                         break;
                     case 2:
-                        EmployeeChoices.register(user); // Pass the employee object to the register method
+                        EmployeeChoices.register(); // Pass the employee object to the register method
                         break;
                     case 3:
                         System.out.println("Thank you for using the program.");
